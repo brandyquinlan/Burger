@@ -1,9 +1,15 @@
-  <h1>Eat-Da-Burger</h1>
-  <div class="wrapper">
+
+<div class="wrapper">
+  <div class="row">
+    <div class="col col-12">
+      <div class="col2">
+        <img class="burger-img img-fluid" src="/assets/img/burger2.png">
+      </div>
+    </div>
     <div class="row">
-      <div class="col-6">
+      <div class="col col-4">
         <div class="col1">
-          <h2>Burgers that are not devoured!</h2>
+          <h2>Burgers Ready to Devour!</h2>
           <ul>
             {{#each burgers}}
             {{#unless this.devoured}}
@@ -13,9 +19,11 @@
           </ul>
         </div>
       </div>
-
-      <div class="col-6">
-        <div class="col2">
+      {{!-- <div class="col2">
+        <img class="burger-img img-fluid" src="/assets/img/burger2.png">
+      </div> --}}
+      <div class="col col-4">
+        <div class="col3">
           <h2>Burgers that are devoured!</h2>
           <ul>
             {{#each burgers}}
@@ -29,17 +37,15 @@
     </div>
   </div>
 
-  <div class="footer"></div>
-  <h2>Order a Burger</h2>
-  {{!-- <div id="order-burger" action="/" method="POST"> --}}
-    <form id="order-burger">
-      <div class="form-group">
-        <label for="burger">What type of burger would you like?</label>
-        <input type="text" id="burger" name="burger_name">
-        {{!-- <textarea id="burger" name="burger_name" placeholder="Enter the
-          type
-          of burger here"></textarea> --}}
-      </div>
-      <button type="submit">Submit Order</button>
-    </form>
-  </div>
+</div>
+
+<footer class="footer text-center">
+
+  <form id="order-burger">
+     <h2>Order a Burger</h2>
+    <div class="form-group text-center">
+      <textarea type="text" id="burger" name="burger_name" placeholder="Enter a burger name"></textarea>
+    </div>
+    <button type="submit">Submit Order</button>
+  </form>
+</footer>
