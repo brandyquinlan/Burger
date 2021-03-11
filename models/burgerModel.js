@@ -1,5 +1,5 @@
 // Import the ORM to create functions that will interact with the database.
-const orm = require('../config/orm.js');
+const orm = require('../config/orm');
 
 const burgers = {
     selectAll(cb) {
@@ -12,9 +12,6 @@ const burgers = {
     updateOne(objColVals, condition, cb) {
         orm.updateOne('burgers', objColVals, condition, (res) => cb(res));
     },
-    // delete(condition, cb) {
-    //     orm.delete('burgers', condition, (res) => cb(res));
-    // },
 };
 
 // Export the database functions for the controller (burgers_controller.js).

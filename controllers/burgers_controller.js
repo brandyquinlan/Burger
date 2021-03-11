@@ -7,30 +7,29 @@ const burgers = require('../models/burgerModel');
 // Create all our routes and set up logic within those routes where required.
 router.get('/', (req, res) => {
     burgers.selectAll((data) => {
-        const hbsObject = {
+        const burgerHbsObject = {
             burgers: data,
         };
-        console.log(hbsObject);
-        res.render('index', hbsObject);
+        console.log(burgerHbsObject);
+        res.render('index', burgerHbsObject);
     });
 });
 
-// router.post('/api/burgers', (req, res) => {
-router.post('/', (req, res) => {
-    burgers.insertOne(['burger_name', 'devoured'], [req.body.burger_name, req.body.devoured], (result) => {
+router.post('/api/burgers', (req, res) => {
+    // router.post('/', (req, res) => {
+    burgers.insertOne(['burger_name'], [req.body.burger_name], (result) => {
         // Send back the ID of the new burger
-        // res.json({ id: result.insertId });
-        res.redirect("/"); //*GH
+        res.json({ id: result.insertId });
     });
 });
 
-// router.put('/api/burgers/:id', (req, res) => {
-router.put("/:id", function(req, res) { //*GH
+router.put('/api/burgers/:id', (req, res) => {
     const condition = `id = ${req.params.id}`;
 
-    //alert('condition', condition);
+    console.log('condition', condition);
+
     burgers.updateOne({
-            devoured: req.body.devoured,
+            devoured: true,
         },
         condition, (result) => {
             if (result.changedRows === 0) {
@@ -38,7 +37,6 @@ router.put("/:id", function(req, res) { //*GH
                 return res.status(404).end();
             }
             res.status(200).end();
-            // res.redirect("/"); //*GH
         }
     );
 });
