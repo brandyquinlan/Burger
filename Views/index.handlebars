@@ -1,37 +1,45 @@
-<h1>Eat-Da-Burger</h1>
+  <h1>Eat-Da-Burger</h1>
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-6">
+        <div class="col1">
+          <h2>Burgers that are not devoured!</h2>
+          <ul>
+            {{#each burgers}}
+            {{#unless this.devoured}}
+            {{> burgers/burgers-block devoured=false}}
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
 
-<h2>Burgers that are not devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-  {{#unless this.devoured}}
-  {{> burgers/burgers-block devoured=true}}
-  {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers that are devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-  {{#if devoured}}
-  {{> burgers/burgers-block devoured=false}}
-  {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form id="create-form" action="/" method="POST">
-  <div class="form-group">
-    <label for="burger">What type of burger would you like?</label>
-    <input type="text" id="burger" name="burger_name">
+      <div class="col-6">
+        <div class="col2">
+          <h2>Burgers that are devoured!</h2>
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burgers-block devoured=true}}
+            {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 
-  {{!-- <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0" id="eatUp"> Devour It!
-  </div> --}}
-
-  <button type="submit">Submit Order</button>
-</form>
+  <div class="footer"></div>
+  <h2>Order a Burger</h2>
+  {{!-- <div id="order-burger" action="/" method="POST"> --}}
+    <form id="order-burger">
+      <div class="form-group">
+        <label for="burger">What type of burger would you like?</label>
+        <input type="text" id="burger" name="burger_name">
+        {{!-- <textarea id="burger" name="burger_name" placeholder="Enter the
+          type
+          of burger here"></textarea> --}}
+      </div>
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
