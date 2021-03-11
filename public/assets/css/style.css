@@ -1,19 +1,51 @@
+.wrapper {
+    margin: 15px;
+    width: 50%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items: stretch;
+}
+
+.col1 {
+    /* background-color: rgb(215, 215, 230); */
+    height: 400px;
+}
+
+.col2 {
+    /* background-color: rgb(202, 235, 202); */
+    height: 400px;
+}
+
 li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+    float: left;
+    width: 300px;
 }
 
 .label {
-  font-weight: bold;
-}
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+    font-weight: bold;
 }
 
 .form-group {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+ul {
+    overflow: hidden;
+    /* To make the <ul> size itself to contain all the <li>s */
 }
