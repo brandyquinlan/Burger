@@ -9,8 +9,8 @@
     <div class="row">
       <div class="col col-4">
         <div class="col1">
-          <h2>Burgers Ready to Devour!</h2>
           <ul>
+            <h2>Burgers to Devour!</h2>
             {{#each burgers}}
             {{#unless this.devoured}}
             {{> burgers/burgers-block devoured=false}}
@@ -19,13 +19,10 @@
           </ul>
         </div>
       </div>
-      {{!-- <div class="col2">
-        <img class="burger-img img-fluid" src="/assets/img/burger2.png">
-      </div> --}}
       <div class="col col-4">
         <div class="col3">
-          <h2>Burgers that are devoured!</h2>
           <ul>
+          <h2>Devoured Burgers!</h2>
             {{#each burgers}}
             {{#if devoured}}
             {{> burgers/burgers-block devoured=true}}
@@ -42,10 +39,13 @@
 <footer class="footer text-center">
 
   <form id="order-burger">
-     <h2>Order a Burger</h2>
     <div class="form-group text-center">
-      <textarea type="text" id="burger" name="burger_name" placeholder="Enter a burger name"></textarea>
+      <h2 id="order-text"><span class="spacing">ORDER </span>a Burger</h2>
+      <div>
+      <input type="text" class="order-input" id="burger" name="burger_name">
+          <button class="btn-order" type="submit">SUBMIT ORDER</button>
+          </div>
     </div>
-    <button class="btn-order" type="submit">Submit Order</button>
+
   </form>
 </footer>
