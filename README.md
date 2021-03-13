@@ -4,6 +4,7 @@
 
 - [Description](#program-description)
 - [Repo Location](#repo-location)
+- [Heroku URL](#Heroku URL)
 - [Installation](#installation-instructions)
 - [Usage](#usage-information) 
 - [License](#licenses) 
@@ -17,8 +18,10 @@
 Eat-Da-Burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Built with the MVC design pattern, Node and MySQL to query and route data, and Handlebars to generate the HTML. The app is deployed to Heroku and the database is linked via JAWSDB.
 
 ## Repo Location
-#### The repo is located here: 
 * [link to repo](https://github.com/Burger/)
+
+## Heroku URL
+* [link to Heroku app](https://quinlan-burger.herokuapp.com/)
 
 ## Installation Instructions
   Run the command "npm i" to install dependencies
