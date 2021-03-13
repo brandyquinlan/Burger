@@ -21,7 +21,7 @@ Eat-Da-Burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (y
 * [link to repo](https://github.com/Burger/)
 
 ## Heroku URL
-* [link to Heroku app](https://quinlan-burger.herokuapp.com/)
+* [link to url](https://quinlan-burger.herokuapp.com/)
 
 ## Installation Instructions
   Run the command "npm i" to install dependencies
