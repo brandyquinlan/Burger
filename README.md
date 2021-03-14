@@ -35,7 +35,7 @@ Eat-Da-Burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (y
 ## Tests
  
 ## DEMO
-* [![Play Demo](https://drive.google.com/file/d/1ttd8IoJRYvnhtAz0Pf6CCU8LwdqJoazD/view?usp=sharing)
+* [Link to demo - https://drive.google.com/file/d/1ttd8IoJRYvnhtAz0Pf6CCU8LwdqJoazD/view?usp=sharing](https://drive.google.com/file/d/1ttd8IoJRYvnhtAz0Pf6CCU8LwdqJoazD/view?usp=sharing)
 
 ## Screenshots
 ![Screenshots](/public/assets/img/burger_screenshots.jpg)
