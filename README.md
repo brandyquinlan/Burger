@@ -85,13 +85,18 @@ All the recommended files and directories from the steps above should look like 
     └── layouts
         └── main.handlebars
 ```
-### Funtionality
+### Functionality
 
 The following npm modules were used:
 ```
-mysql
-express
+Node.js
+MySQL
+Express
 express-handlebars
+JAWSDB
+HTML
+CSS
+JavaScript
 ```
 
 ## Questions
