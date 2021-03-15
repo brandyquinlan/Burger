@@ -17,7 +17,7 @@
 Eat-Da-Burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Built with the MVC design pattern, Node and MySQL to query and route data, and Handlebars to generate the HTML. The app is deployed to Heroku and the database is linked via JAWSDB.
 
 ## Repo and Heroku App Links
-* [Link to GitHub Repo - https://github.com/Burger/](https://github.com/Burger/)
+* [Link to GitHub Repo - https://github.com/brandyquinlan/Burger](https://github.com/brandyquinlan/Burger)
 * [Link to Heroku App - https://quinlan-burger.herokuapp.com/](https://quinlan-burger.herokuapp.com/)
 
 ## Installation Instructions
