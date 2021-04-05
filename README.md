@@ -1,4 +1,4 @@
-# Unit 14 # Node Express Handlebars: Eat-Da-Burger!
+# Eat-Da-Burger!
 
 ## Table of Contents
 
@@ -101,8 +101,9 @@ JavaScript
 
 ## Questions
 Please contact me with questions:
-```
+
 Brandy Quinlan
-Email: brandyquinlan@gmail.com
-Github link: brandyquinlan
-```
+<br>
+Email: <brandyquinlan@gmail.com>
+<br>
+Github: [https://github.com/brandyquinlan/](https://github.com/brandyquinlan/)
